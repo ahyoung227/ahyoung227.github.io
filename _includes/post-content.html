@@ -1,19 +1,10 @@
 <div class="content">
   <h3 class="title">{{ post.title }}</h3>
 
-  <p class="content-small">{{ post.lead_text }}</p>
-
-  {% if post.credit != empty %}
-  <div class="tags">
-    {% for tag in post.credit %}
-    <p>{{ post.credit }} <a href="https://tltlab.org/courses/beyond-bits-and-atoms-designing-technological-tools/" target="blank">Beyond Bits & Atoms teaching team</a></p>
-    <a href="https://drive.google.com/file/d/19ps7Gi-ZujIzB-SqYXtjE5htJCdX6La-/view" target="blank">{{ post.paper }}</a>
-    {% endfor %}
-  </div>
-  {% endif %}
+  <p class="excerpt">{{ post.lead_text }}</p>
 
   {% if post.project_link != empty %}
-  <a href="{{ post.project_link }}" class="project-link" target="blank"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
+  <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
   {% endif %}
 
   {% if post.tags != empty %}

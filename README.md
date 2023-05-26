@@ -1,6 +1,13 @@
-#Ahyoung's portfolio
+## Phantom for Jekyll
 
-## Installation
+A minimalist, responsive portfolio theme for [Jekyll](http://jekyllrb.com/) with Bootstrap.
+
+![preview](preview.jpg)
+
+[See it in action](http://jamigibbs.github.io/phantom/).
+
+## Fancy using it for your own site?
+
 Here are some steps to get you started:
 
 1. Clone this repo and cd into the directory:
